@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+	   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+    <title>task 2</title>
+
+    <!-- Bootstrap -->
+   	<link href="css/bootstrap.css" rel="stylesheet">
+	  <link href="css/style.css" rel="stylesheet">
+
+
+  </head>
+  <!-- **************************************************************** -->
+<body class="body">
+
+
+    <div class="row navbar">
+      <div class="row1 col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+      <div class="row1 col-xs-6 col-sm-6 col-md-6 col-lg-6"></div>
+      <div class="row1 col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+    </div>
+
+
+<!-- кнопка перехода на другую карту -->
+  <div class="row">
+    <div class="row1 col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+
+    <div class="row1 col-xs-10 col-sm-10col-md-10 col-lg-10">
+
+      <a href="task1.html" class="btn btn-primary navbar-header">Google</a>
+
+    </div>
+
+    <div class="row1 col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+  </div>
+
+
+  <!-- координаты -->
+	<div class="row">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+    <form class="navbar-form navbar-left form-group" action="" method="post">
+      <div class="form-group ">
+            <input type="text" class="form-control" placeholder="Первая координата" value=""></input>
+      </div>
+      <div class="form-group">
+            <input type="text" class="form-control" placeholder="Вторая координата" value=""></input>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-success" name="button">кнопка</button>
+
+      </div>
+
+
+    </form>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+  </div>
+
+
+<!-- скрипт с картой -->
+	<div class="row">
+
+
+	  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+
+
+	  <div class="row3  col-xs-8 col-sm-8 col-md-8 col-lg-8 form-group ">
+
+
+
+
+                <div id="map" class="" style="height: 600px" ></div>
+                <script>
+                    ymaps.ready(init);
+                    var myMap;
+
+                    function init(){
+                        myMap = new ymaps.Map("map", {
+                            center: [53.90, 27.555],
+                            zoom: 7
+                        });
+                    }
+                </script>
+
+
+
+	  </div>
+
+
+
+
+
+
+
+	</div>
+
+<!-- footer -->
+  <div class="row">
+
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"></div>
+
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"></div>
+
+  </div>
+
+<!-- для работы сайта -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    Include all compiled plugins (below), or include individual files as needed
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
